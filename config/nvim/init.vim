@@ -2,8 +2,8 @@
 " VIM 自身配置
 "--------------------------------------
 set nocompatible              " 去除VI一致性,必须
-filetype off                  " 必须
-
+filetype off                  " 在使用某些插件，需要打开
+" 列高亮
 set cursorcolumn
 set number
 syntax on

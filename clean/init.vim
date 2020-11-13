@@ -1,3 +1,6 @@
+"=================================
+" VIM 自身配置
+"=================================
 " 编码设置
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 set enc=utf8
@@ -13,6 +16,9 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+" 列高亮
+set cursorcolumn
 
 " 记录上次光标位置
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -39,15 +45,21 @@ map Q :wq<CR>
 map tq :q!<CR>
 map te :terminal<CR>
 
+" 设置 buff、空白字符的视觉提示
+set list listchars=extends:❯,precedes:❮,tab:▸\ ,trail:˽
+
 " 其他的一些配置
 syntax on   " 语法高亮
 set number      " 显示行号
-"set relativenumber    "  把当前所在行的行号向前突出
+"set relativenumber    " 相对行号
 set wildmenu    "  让vim命令可用Tab补全
 set hlsearch      " 变输入搜索词边高亮
 set incsearch      " 光标自动跳转到搜索结果上
 set t_ut=  "防止vim背景颜色错误
 
+"=================================
+" 插件部分--开始
+"=================================
 " 插件
 call plug#begin('~/.vim/plugged')
 
@@ -87,12 +99,14 @@ Plug 'majutsushi/tagbar'
 Plug 'voldikss/vim-translator'
 
 call plug#end()
+"=================================
+" 插件部分--结束
+"=================================
 
 
-
-" =========
+" =================================
 " vim-translator
-" =========
+" =================================
 " 在窗口中显示翻译
 nmap <silent> <Leader>w <Plug>TranslateW
 " 将文字替换为翻译
