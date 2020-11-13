@@ -1,7 +1,7 @@
-# vim 配置说明
+# nvim 配置说明
 
 添加一些 vim配置 的配置说明
-当前配置基于 nvim 进行配置，添加了常用的插件，并支持java。
+当前配置基于 nvim 进行配置，添加了常用的插件，并支持java语法提示。
 
 ## 环境准备
 ```shell script
@@ -64,3 +64,19 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs  https://raw.githubuser
     ]
 }
 ```
+
+## 字体 和 iTerm2 配置
+将 powerline 的字体也放到项目当中，方便大家直接导入字体。解决 **vim-airline** 下符号显示导常，箭头标志大小异常的问题
+### 1.字体
+直接在项目中双点安装或自行下载安装
+```shell script
+git clone https://github.com/supermarin/powerline-fonts.git
+```
+### 2.iTerm2 设置
+安装 powerline 字体后在配置
+安装 Menlo Regular for Powerline.otf 这个字体，在 iTerm2下显示为 **Menlo for Powerline**，的字体
+ 
+
+
+
+

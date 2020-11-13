@@ -2,7 +2,7 @@
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
   "codeLens.enable": true,
-  "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home",
+  "java.home": "/Library/Java/JavaVirtualMachines/jdk-11.0.9.jdk/Contents/Home",
   "suggest.completionItemKindLabels": {
     "class": "\uf0e8",
     "color": "\ue22b",
